@@ -37,5 +37,6 @@ export async function getStaticProps() {
   const sortedPosts = await getAllPostsData();
   return {
     props: { sortedPosts }, // ページコンポーネントに props として渡されます。
+    revalidate: 3, // HTMLの再生成が開始してから次に行われるまでの間隔
   };
 }
