@@ -28,7 +28,7 @@ export default function BlogPage({ sortedPosts }) {
           </svg>
           <span>Back to main page</span>
         </div>
-      </Link>{" "}
+      </Link>
     </Layout>
   );
 }
